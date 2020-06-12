@@ -19,10 +19,12 @@ class _CheckInScreenState extends State<CheckInScreen> {
           children: <Widget>[
             Column(
               children: <Widget>[
+                SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.all(5),
                   child: CheckboxListTile(
-                    title: Text('10am Check-in'),
+                    title:
+                        Text('10am Check-in', style: TextStyle(fontSize: 30)),
                     value: check1,
                     onChanged: (result) {
                       setState(() {
@@ -34,7 +36,7 @@ class _CheckInScreenState extends State<CheckInScreen> {
                 Padding(
                   padding: const EdgeInsets.all(5),
                   child: CheckboxListTile(
-                    title: Text('3pm Check-in'),
+                    title: Text('3pm Check-in', style: TextStyle(fontSize: 30)),
                     value: check2,
                     onChanged: (result) {
                       setState(() {

@@ -12,10 +12,38 @@ class _AccountScreenState extends State<AccountScreen> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            SizedBox(height: 10),
             Center(child: Text('Sam', style: TextStyle(fontSize: 50))),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                height: MediaQuery.of(context).size.width * 0.5,
+                width: MediaQuery.of(context).size.width * 0.5,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.grey,
+                ),
+                child: Icon(Icons.person, size: 100),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 10, 20, 10),
+              child: Text('Age: 67', style: TextStyle(fontSize: 40)),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 10, 20, 10),
+              child: Text('Blood Type: O-', style: TextStyle(fontSize: 40)),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 10, 20, 10),
+              child: Text('Weight: 67kg', style: TextStyle(fontSize: 40)),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 10, 20, 10),
+              child: Text('Caretaker: Jean', style: TextStyle(fontSize: 40)),
+            ),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: FlatButton(
