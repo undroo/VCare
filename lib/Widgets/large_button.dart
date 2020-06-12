@@ -23,7 +23,7 @@ class LargeButton extends StatelessWidget {
                 color: Colors.black54,
                 blurRadius: 3.0,
                 offset: Offset(2, 2),
-              )
+              ),
             ],
           ),
           child: Column(

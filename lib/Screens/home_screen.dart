@@ -1,6 +1,8 @@
 import 'package:VCare/Screens/account_screen.dart';
 import 'package:VCare/Screens/call_screen.dart';
 import 'package:VCare/Screens/checkin_screen.dart';
+import 'package:VCare/Screens/delivery_screen.dart';
+import 'package:VCare/Screens/help_screen.dart';
 import 'package:VCare/Screens/schedule_screen.dart';
 import 'package:VCare/Widgets/large_button.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +42,18 @@ class HomeScreen extends StatelessWidget {
               name: 'Account',
               icon: Icon(Icons.person, size: 80),
               color: Colors.pinkAccent,
+            ),
+            LargeButton(
+              onPress: () => Navigator.pushNamed(context, HelpScreen.route),
+              name: 'Help',
+              icon: Icon(Icons.live_help, size: 80),
+              color: Colors.green,
+            ),
+            LargeButton(
+              onPress: () => Navigator.pushNamed(context, DeliveryScreen.route),
+              name: 'Delivery',
+              icon: Icon(Icons.directions_car, size: 80),
+              color: Colors.yellow[800],
             ),
           ],
         ),

@@ -1,5 +1,7 @@
 import 'package:VCare/Screens/account_screen.dart';
 import 'package:VCare/Screens/call_screen.dart';
+import 'package:VCare/Screens/delivery_screen.dart';
+import 'package:VCare/Screens/help_screen.dart';
 import 'package:VCare/Screens/home_screen.dart';
 import 'package:VCare/Screens/schedule_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         ScheduleScreen.route: (context) => ScheduleScreen(),
         AccountScreen.route: (context) => AccountScreen(),
         CallScreen.route: (context) => CallScreen(),
+        DeliveryScreen.route: (context) => DeliveryScreen(),
+        HelpScreen.route: (context) => HelpScreen(),
       },
       debugShowCheckedModeBanner: false,
     );
